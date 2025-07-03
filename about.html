@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | CyberShield</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+  <style>
+    @keyframes floatCard {
+      0%,100% { transform: translateY(0);}
+      50% { transform: translateY(-10px);}
+    }
+    .profile-float-card {
+      animation: floatCard 2.5s infinite alternate;
+    }
+    .logout-btn-top {
+      position: absolute;
+      top: 32px;
+      right: 32px;
+      background: linear-gradient(90deg, #ff1744 0%, #ff9100 100%);
+      color: #fff !important;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 12px 28px;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px #ff174488;
+      text-decoration: none;
+      z-index: 10;
+      transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+      border: none;
+      outline: none;
+      display: inline-block;
+    }
+    .logout-btn-top:hover, .logout-btn-top:focus {
+      background: linear-gradient(90deg, #ff9100 0%, #ff1744 100%);
+      color: #fff;
+      transform: translateY(-2px) scale(1.04);
+      box-shadow: 0 8px 32px #ff174488;
+    }
+    @media (max-width: 600px) {
+      .logout-btn-top {
+        top: 12px;
+        right: 10px;
+        padding: 10px 16px;
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- Add this to the very top of the <body> in ALL your HTML files -->
+<div id="fadeup-overlay"></div>
+  <header style="position: relative;">
+    <h1>CyberShield</h1>
+    <p>Protect Your Data, Protect Your Life.</p>
+    <nav>
+      <a href="index.html" class="nav-link fadeup-link" data-href="index.html">Home</a>
+      <a href="about.html" class="nav-link fadeup-link active" data-href="about.html">About</a>
+      <a href="protect.html" class="nav-link fadeup-link" data-href="protect.html">Protect Yourself</a>
+      <a href="tools.html" class="nav-link fadeup-link" data-href="tools.html">Tools & Guides</a>
+      <a href="contact.html" class="nav-link fadeup-link" data-href="contact.html">Contact</a>
+    </nav>
+    <a href="login.html" id="logout-btn" class="logout-btn-top">Logout</a>
+  </header>
+  <main>
+    <!-- Update the About Us section title for a cooler look -->
+<div class="section-title-card" style="background: linear-gradient(90deg, #181f2a 60%, #232a36 100%); border-radius: 14px; box-shadow: 0 2px 16px #21cbf322; padding: 32px 0 18px 0; margin-bottom: 32px;">
+  <h2 class="section-title" style="color:#21cbf3; font-size:2.6em; font-weight:900; letter-spacing:2px; text-align:center; margin:0; text-shadow:0 2px 12px #21cbf344;">
+    <i class="bx bx-shield-quarter" style="vertical-align:middle; margin-right:10px;"></i>
+    About Us
+  </h2>
+  <p style="color:#b8eaff; text-align:center; font-size:1.15em; margin-top:12px; letter-spacing:0.5px;">
+    Meet the CyberShield team — a group of passionate students dedicated to empowering you with knowledge and tools for safer online experiences.
+  </p>
+</div>
+<section class="about-carousel-section">
+  <div class="owl-carousel custom-carousel owl-theme">
+    <!-- Card 1 -->
+    <div class="item">
+      <div class="exp-video-wrapper">
+        <img src="amirul.jpg" alt="Amirul Ramli" style="width:100%;height:220px;object-fit:cover;">
+      </div>
+      <div class="exp-info">
+        <h5 style="color:#21cbf3; font-weight:800; font-size:1.3em; margin-bottom:8px;">
+          <i class="bx bx-user-circle"></i> Amirul Ramli
+        </h5>
+        <div class="exp-desc">
+          <p style="font-style:italic; color:#b8eaff; font-size:1.08em; margin-bottom:8px;">
+            "Very analytical person"
+          </p>
+          <p style="color:#e3f2fd; font-size:0.98em; letter-spacing:0.5px;">
+            thisisamirulr@gmail.com
+          </p>
+          <p>
+            <a href="mailto:thisisamirulr@gmail.com" class="no-fade">
+              <button type="button" style="background-color:#21cbf3; color:#181c24; border:none; border-radius:4px; padding:8px 18px; font-weight:600; cursor:pointer;">
+                Send email
+              </button>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="item">
+      <div class="exp-video-wrapper">
+        <img src="me.jpg" alt="Aidan Fikri" style="width:100%;height:220px;object-fit:cover;">
+      </div>
+      <div class="exp-info">
+        <h5 style="color:#21cbf3; font-weight:800; font-size:1.3em; margin-bottom:8px;">
+          <i class="bx bx-user-circle"></i> Aidan Fikri
+        </h5>
+        <div class="exp-desc">
+          <p style="font-style:italic; color:#b8eaff; font-size:1.08em; margin-bottom:8px;">
+            "You mad bro? take a chill pill"<br>
+          </p>
+          <p style="color:#e3f2fd; font-size:0.98em; letter-spacing:0.5px;">
+            aidan.fikri.khairul@gmail.com
+          </p>
+          <p>
+            <a href="mailto:aidan.fikri.khairul@gmail.com" class="no-fade">
+              <button type="button" style="background-color:#21cbf3; color:#181c24; border:none; border-radius:4px; padding:8px 18px; font-weight:600; cursor:pointer;">
+                Send email
+              </button>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="item">
+      <div class="exp-video-wrapper">
+        <img src="fariz.jpg" alt="Fariz Nangar" style="width:100%;height:220px;object-fit:cover;">
+      </div>
+      <div class="exp-info">
+        <h5 style="color:#21cbf3; font-weight:800; font-size:1.3em; margin-bottom:8px;">
+          <i class="bx bx-user-circle"></i> Faris Nangar
+        </h5>
+        <div class="exp-desc">
+          <p style="font-style:italic; color:#b8eaff; font-size:1.08em; margin-bottom:8px;">
+            "Jack of all trades, master of none"
+          </p>
+          <p style="color:#e3f2fd; font-size:0.98em; letter-spacing:0.5px;">
+            nangarfaris@gmail.com
+          </p>
+          <p>
+            <a href="mailto:nangarfaris@gmail.com" class="no-fade">
+              <button type="button" style="background-color:#21cbf3; color:#181c24; border:none; border-radius:4px; padding:8px 18px; font-weight:600; cursor:pointer;">
+                Send email
+              </button>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="item">
+      <div class="exp-video-wrapper">
+        <img src="haiqal.jpg" alt="Haiqal Hafiz" style="width:100%;height:220px;object-fit:cover;">
+      </div>
+      <div class="exp-info">
+        <h5 style="color:#21cbf3; font-weight:800; font-size:1.3em; margin-bottom:8px;">
+          <i class="bx bx-user-circle"></i> Haiqal Hafiz
+        </h5>
+        <div class="exp-desc">
+          <p style="font-style:italic; color:#b8eaff; font-size:1.08em; margin-bottom:8px;">
+            "It's not about perfection, it's about effort".
+          </p>
+          <p style="color:#e3f2fd; font-size:0.98em; letter-spacing:0.5px;">
+            haiqalhafiz55@gmail.com
+          </p>
+          <p>
+            <a href="mailto:haiqalhafiz55@gmail.com" class="no-fade">
+              <button type="button" style="background-color:#21cbf3; color:#181c24; border:none; border-radius:4px; padding:8px 18px; font-weight:600; cursor:pointer;">
+                Send email
+              </button>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Card 5 -->
+    <div class="item">
+      <div class="exp-video-wrapper">
+        <img src="ameer.jpg" alt="Ameer" style="width:100%;height:220px;object-fit:cover;">
+      </div>
+      <div class="exp-info">
+        <h5 style="color:#21cbf3; font-weight:800; font-size:1.3em; margin-bottom:8px;">
+          <i class="bx bx-user-circle"></i> Ameer Imran
+        </h5>
+        <div class="exp-desc">
+          <p style="font-style:italic; color:#b8eaff; font-size:1.08em; margin-bottom:8px;">
+            "They overlooked me, but Allah never did and that made all the difference".
+          </p>
+          <p style="color:#e3f2fd; font-size:0.98em; letter-spacing:0.5px;">
+            ameerimranjeffry@gmail.com
+          </p>
+          <p>
+            <a href="mailto:ameerimranjeffry@gmail.com" class="no-fade">
+              <button type="button" style="background-color:#21cbf3; color:#181c24; border:none; border-radius:4px; padding:8px 18px; font-weight:600; cursor:pointer;">
+                Send email
+              </button>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+  <footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-about">
+      <h3>About CyberShield</h3>
+      <p>Your digital security partner, helping students and professionals stay safe online through awareness and smart tools.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="protect.html">Protect Yourself</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>Email: support@cybershield.com</p>
+      <p>Phone: +60 12-345 6789</p>
+    </div>
+
+    <div class="footer-newsletter-inline">
+      <h3>Newsletter</h3>
+      <form class="newsletter-form-inline">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 CyberShield. All rights reserved.</p>
+  </div>
+</footer>
+  <script>
+  // Fade in on page load
+  window.addEventListener('DOMContentLoaded', function() {
+    const overlay = document.getElementById('fadeup-overlay');
+    overlay.classList.add('page-enter');
+    setTimeout(() => {
+      overlay.classList.remove('page-enter');
+    }, 1000);
+  });
+
+  // Fade out on navigation, but skip for mailto and .no-fade
+  document.querySelectorAll('a').forEach(link => {
+    // Only fade for internal links, not mailto or .no-fade
+    if (
+      link.hostname === window.location.hostname &&
+      !link.classList.contains('no-fade')
+    ) {
+      link.addEventListener('click', function(e) {
+        if (
+          link.getAttribute('href') &&
+          !link.getAttribute('href').startsWith('#') &&
+          !link.getAttribute('target')
+        ) {
+          e.preventDefault();
+          const overlay = document.getElementById('fadeup-overlay');
+          overlay.classList.add('fadeup-animate');
+          setTimeout(() => {
+            window.location = link.href;
+          }, 900);
+        }
+      });
+    }
+  });
+
+  // Logout button functionality: redirect to login page
+    const logoutBtn = document.getElementById('logout-btn');
+    if (logoutBtn) {
+      logoutBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = 'login.html';
+      });
+    }
+</script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  $(".custom-carousel").owlCarousel({
+    items: 3,
+    loop: true,
+    center: true,
+    margin: 32,
+    smartSpeed: 700,
+    responsive: {
+      0: { items: 1 },
+      600: { items: 2 },
+      1000: { items: 3 }
+    }
+  });
+</script>
+</body>
+</html>

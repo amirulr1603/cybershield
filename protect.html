@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Protect Yourself | CyberShield</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .logout-btn-top {
+      position: absolute;
+      top: 32px;
+      right: 32px;
+      background: linear-gradient(90deg, #ff1744 0%, #ff9100 100%);
+      color: #fff !important;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 12px 28px;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px #ff174488;
+      text-decoration: none;
+      z-index: 10;
+      transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+      border: none;
+      outline: none;
+      display: inline-block;
+    }
+    .logout-btn-top:hover, .logout-btn-top:focus {
+      background: linear-gradient(90deg, #ff9100 0%, #ff1744 100%);
+      color: #fff;
+      transform: translateY(-2px) scale(1.04);
+      box-shadow: 0 8px 32px #ff174488;
+    }
+    @media (max-width: 600px) {
+      .logout-btn-top {
+        top: 12px;
+        right: 10px;
+        padding: 10px 16px;
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="fadeup-overlay"></div>
+  <header style="position: relative;">
+    <h1>CyberShield</h1>
+    <p>Protect Your Data, Protect Your Life.</p>
+    <nav>
+      <a href="index.html" class="nav-link fadeup-link" data-href="index.html">Home</a>
+      <a href="about.html" class="nav-link fadeup-link" data-href="about.html">About</a>
+      <a href="protect.html" class="nav-link fadeup-link active" data-href="protect.html">Protect Yourself</a>
+      <a href="tools.html" class="nav-link fadeup-link" data-href="tools.html">Tools & Guide</a>
+      <a href="contact.html" class="nav-link fadeup-link" data-href="contact.html">Contact</a>
+    </nav>
+    <a href="login.html" id="logout-btn" class="logout-btn-top">Logout</a>
+  </header>
+  <main>
+    <section>
+      <h2>Password Safety</h2>
+      <button type="button" class="collapsible">Show Details</button>
+      <div class="content">
+        <ul class="tips-list">
+          <li><span class="tip-icon">🔑</span> <b>MAKE THEM LONG</b> <span class="tip-keyword">At least 16 characters</span>—longer is stronger!</li>
+          <li><span class="tip-icon">🎲</span> <b>MAKE THEM RANDOM</b> Use a random string of mixed-case letters, numbers and symbols, or a memorable passphrase of unrelated words.</li>
+          <li><span class="tip-icon">🧩</span> <b>MAKE THEM UNIQUE</b> Use a different strong password for each account.</li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <h2>Spotting Scams</h2>
+      <button type="button" class="collapsible">Show Details</button>
+      <div class="content">
+        <ul class="scam-list">
+          <li>
+            <span class="tip-icon">📧</span>
+            <strong>Check for suspicious email addresses</strong>
+            <span class="scam-desc">
+              Look for mismatched names, odd domains, and generic greetings.
+            </span>
+          </li>
+          <li>
+            <span class="tip-icon">🚫</span>
+            <strong>Never click unknown links</strong>
+            <span class="scam-desc">
+              Avoid clicking on suspicious links to prevent malware and data theft.
+            </span>
+          </li>
+          <li>
+            <span class="tip-icon">⚠️</span>
+            <strong>Report scam attempts</strong>
+            <span class="scam-desc">
+              Reporting scams helps protect others and assists authorities.
+            </span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <h2>Social Media Privacy</h2>
+      <button type="button" class="collapsible">Show Details</button>
+      <div class="content">
+        <ul class="scam-list">
+          <li>
+            <span class="tip-icon">🔒</span>
+            <strong>Adjust privacy settings</strong>
+            <span class="scam-desc">
+              Adjusting privacy settings is critical for safeguarding personal information, controlling your online reputation, and minimizing dangers such as identity theft and cyberbullying. Controlling who may view your postings, limiting location tracking, and managing access to your accounts allows you to navigate the online world with better confidence and security.
+            </span>
+          </li>
+          <li>
+            <span class="tip-icon">📍</span>
+            <strong>Limit location sharing</strong>
+            <span class="scam-desc">
+              Marketers might use your location information to target their advertising, which can be useful but sometimes bothersome. The data may be used to create a thorough profile of you, including predictions about where you will go next. People frequently engage in location sharing unknowingly, such as when they purchase a product online, and may be unaware of what has occurred until they become worried about their privacy.
+            </span>
+          </li>
+          <li>
+            <span class="tip-icon">💬</span>
+            <strong>Be mindful of what you post</strong>
+            <span class="scam-desc">
+              It is critical to maintain caution while posting on social media since your actions might have long-term implications. Before sharing anything, consider how it will affect your employment, relationships, and personal safety. Consider your audience, be mindful of others' privacy, and avoid revealing sensitive personal information.
+            </span>
+          </li>
+        </ul>
+      </div>
+      <center><p> Let's Get to Know About Cybersecurity More through this video online</p></h2></center>
+      <iframe width="420" height="345" src="https://www.youtube.com/embed/zYLkdT731x8?si=7uKwLaDgWMkhNoXV">
+</iframe>
+<iframe width="420" height="345" src="https://www.youtube.com/embed/shQEXpUwaIY?si=gRWdzn_AgeCgWHcG">
+</iframe>
+    </section> 
+
+  </main>
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-about">
+        <h3>About CyberShield</h3>
+        <p>Your digital security partner, helping students and professionals stay safe online through awareness and smart tools.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="protect.html">Protect Yourself</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: support@cybershield.com</p>
+        <p>Phone: +60 12-345 6789</p>
+      </div>
+
+      <div class="footer-newsletter-inline">
+        <h3>Newsletter</h3>
+        <form class="newsletter-form-inline">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 CyberShield. All rights reserved.</p>
+    </div> 
+
+  </footer>
+  <script>
+    // Fade in on page load
+    window.addEventListener('DOMContentLoaded', function() {
+      const overlay = document.getElementById('fadeup-overlay');
+      overlay.classList.add('page-enter');
+      setTimeout(() => {
+        overlay.classList.remove('page-enter');
+      }, 1000);
+    });
+
+    // Fade out on navigation
+    document.querySelectorAll('a').forEach(link => {
+      // Only fade for internal links
+      if (link.hostname === window.location.hostname) {
+        link.addEventListener('click', function(e) {
+          // Ignore anchor and JS links
+          if (link.getAttribute('href') && !link.getAttribute('href').startsWith('#') && !link.getAttribute('target')) {
+            e.preventDefault();
+            const overlay = document.getElementById('fadeup-overlay');
+            overlay.classList.add('fadeup-animate');
+            setTimeout(() => {
+              window.location = link.href;
+            }, 900);
+          }
+        });
+      }
+    });
+
+    document.querySelectorAll('.collapsible').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        this.classList.toggle('active');
+        var content = this.nextElementSibling;
+        if (content.classList.contains('show')) {
+          content.classList.remove('show');
+          content.style.maxHeight = null;
+        } else {
+          content.classList.add('show');
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+
+    // Logout button functionality: redirect to login page
+    const logoutBtn = document.getElementById('logout-btn');
+    if (logoutBtn) {
+      logoutBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = 'login.html';
+      });
+    }
+  </script>
+</body>
+</html>

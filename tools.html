@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cybershield</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .logout-btn-top {
+        position: absolute;
+        top: 32px;
+        right: 32px;
+        background: linear-gradient(90deg, #ff1744 0%, #ff9100 100%);
+        color: #fff !important;
+        font-weight: bold;
+        font-size: 1.1em;
+        padding: 12px 28px;
+        border-radius: 8px;
+        box-shadow: 0 4px 16px #ff174488;
+        text-decoration: none;
+        z-index: 10;
+        transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+        border: none;
+        outline: none;
+        display: inline-block;
+      }
+      .logout-btn-top:hover, .logout-btn-top:focus {
+        background: linear-gradient(90deg, #ff9100 0%, #ff1744 100%);
+        color: #fff;
+        transform: translateY(-2px) scale(1.04);
+        box-shadow: 0 8px 32px #ff174488;
+      }
+      @media (max-width: 600px) {
+        .logout-btn-top {
+          top: 12px;
+          right: 10px;
+          padding: 10px 16px;
+          font-size: 1em;
+        }
+      }
+    </style>
+</head>
+<body> 
+  <div id="fadeup-overlay"></div>
+  <header style="position: relative;">
+    <h1>CyberShield</h1>
+    <p>Protect Your Data, Protect Your Life.</p>
+    <nav>
+      <a href="index.html" class="nav-link fadeup-link" data-href="index.html">Home</a>
+      <a href="about.html" class="nav-link fadeup-link" data-href="about.html">About</a>
+      <a href="protect.html" class="nav-link fadeup-link" data-href="protect.html">Protect Yourself</a>
+      <a href="tools.html" class="nav-link fadeup-link active" data-href="tools.html">Tools & Guides</a>
+      <a href="contact.html" class="nav-link fadeup-link" data-href="contact.html">Contact</a>
+    </nav>
+    <a href="login.html" id="logout-btn" class="logout-btn-top">Logout</a>
+  </header>
+
+    <div class="myDiv">
+        <h2>Tools And Guides</h2>
+        <p><i>Understand the Cybersecurity Tools and Guides</i>.</p>
+    </div>
+
+    <div class="tools-row">
+        <div class="tool-card">
+            <div class="tool-card-content">
+                <div class="tool-card-header">
+                    <span class="tool-card-label"><i>First Tools</i></span>
+                    <span class="tool-card-title">WireShark</span>
+                </div>
+                <div class="tool-card-period">Wireshark is a free and open-source packet analyzer</div>
+                <div class="tool-card-details">
+                    <em>It is used for network troubleshooting, analysis, software and communications protocol development, and education</em>
+                </div>
+                <div class="tool-card-image">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/1*sQ9FI1LOgPMm7YJhvXPelg.png" alt="WireShark" width="500" height="400">
+                </div>
+                <a href="https://www.wireshark.org/download.html" target="_blank" class="download-btn">Download</a>
+            </div>
+        </div>
+
+        <div class="tool-card">
+            <div class="tool-card-content">
+                <div class="tool-card-header">
+                    <span class="tool-card-label"><i>Second Tools</i></span>
+                    <span class="tool-card-title">Metasploit</span>
+                </div>
+                <div class="tool-card-period">Metasploit is a very powerful penetration testing tool that can be used by both criminals and ethical hackers</div>
+                <div class="tool-card-details">
+                    <em>A computer security project that provides information about security vulnerabilities and aids in penetration testing and IDS signature development</em>
+                </div>
+                <div class="tool-card-image">
+                    <img src="https://www.sentinelone.com/wp-content/uploads/2018/09/Meterpreter-1-1600x900.png" alt="Metasploit" width="500" height="400">
+                </div>
+                <a href="https://www.metasploit.com/download" target="_blank" class="download-btn">Download</a>
+            </div>
+        </div>  
+
+        <div class="tool-card">
+            <div class="tool-card-content">
+                <div class="tool-card-header">
+                    <span class="tool-card-label"><i>Third Tools</i></span>
+                    <span class="tool-card-title">Firewalls</span>
+                </div>
+                <div class="tool-card-period">Firewalls play a crucial role in regulating network traffic and safeguarding against unauthorized access by serving as a protective barrier</div>
+                <div class="tool-card-details">
+                    <em>In computing, a firewall is a network security system that monitors and controls incoming and outgoing network traffic based on configurable security rules. A firewall typically establishes a barrier between a trusted network and an untrusted network, such as the Internet or between several VLANs</em>
+                </div>
+                <div class="tool-card-image">
+                    <img src="https://cdn.britannica.com/26/247126-050-CD6FCB4C/firewall.jpg" alt="Firewall" width="600" height="400">
+                </div>
+                <a href="https://www.glasswire.com/download/" target="_blank" class="download-btn">Download</a>
+            </div>
+        </div>   
+
+        <div class="tool-card">
+            <div class="tool-card-content">
+                <div class="tool-card-header">
+                    <span class="tool-card-label"><i>Fourth Tools</i></span>
+                    <span class="tool-card-title">Antivirus Software</span>
+                </div>
+                <div class="tool-card-period">When you have antivirus software on your computer, you take a proactive step in cybersecurity. It helps protect against many cyber threats</div>
+                <div class="tool-card-details">
+                    <em>Ability to detect and remove malware, provide endpoint security, and protect individual systems from a wide range of internet-born threats</em>
+                </div>
+                <div class="tool-card-image">
+                    <img src="https://www.wepc.com/wp-content/uploads/2022/12/Where-to-buy-Antivirus-software-.jpg" alt="Antivirus Software" width="600" height="400">
+                </div>
+                <a href="https://www.avast.com/en-my/index" target="_blank" class="download-btn">Download</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-about">
+          <h3>About CyberShield</h3>
+          <p>Your digital security partner, helping students and professionals stay safe online through awareness and smart tools.</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="protect.html">Protect Yourself</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>Email: support@cybershield.com</p>
+          <p>Phone: +60 12-345 6789</p>
+        </div>
+
+        <div class="footer-newsletter-inline">
+          <h3>Newsletter</h3>
+          <form class="newsletter-form-inline">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 CyberShield. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Add this before </body> in ALL your HTML files -->
+    <script>
+      // Fade in on page load
+      window.addEventListener('DOMContentLoaded', function() {
+        const overlay = document.getElementById('fadeup-overlay');
+        overlay.classList.add('page-enter');
+        setTimeout(() => {
+          overlay.classList.remove('page-enter');
+        }, 1000);
+      });
+
+      // Fade out on navigation
+      document.querySelectorAll('a').forEach(link => {
+        // Only fade for internal links
+        if (link.hostname === window.location.hostname) {
+          link.addEventListener('click', function(e) {
+            // Ignore anchor and JS links
+            if (link.getAttribute('href') && !link.getAttribute('href').startsWith('#') && !link.getAttribute('target')) {
+              e.preventDefault();
+              const overlay = document.getElementById('fadeup-overlay');
+              overlay.classList.add('fadeup-animate');
+              setTimeout(() => {
+                window.location = link.href;
+              }, 900);
+            }
+          });
+        }
+      });
+
+    // Logout button functionality: redirect to login page
+    const logoutBtn = document.getElementById('logout-btn');
+    if (logoutBtn) {
+      logoutBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = 'login.html';
+      });
+    }
+    </script>
+</body>
+</html>

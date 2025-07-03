@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | CyberShield</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="SignUp_LogIn_Form.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <style>
+    .logout-btn-top {
+      position: absolute;
+      top: 32px;
+      right: 32px;
+      background: linear-gradient(90deg, #ff1744 0%, #ff9100 100%);
+      color: #fff !important;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 12px 28px;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px #ff174488;
+      text-decoration: none;
+      z-index: 10;
+      transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+      border: none;
+      outline: none;
+      display: inline-block;
+    }
+    .logout-btn-top:hover, .logout-btn-top:focus {
+      background: linear-gradient(90deg, #ff9100 0%, #ff1744 100%);
+      color: #fff;
+      transform: translateY(-2px) scale(1.04);
+      box-shadow: 0 8px 32px #ff174488;
+    }
+    @media (max-width: 600px) {
+      .logout-btn-top {
+        top: 12px;
+        right: 10px;
+        padding: 10px 16px;
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="fadeup-overlay"></div>
+  <header style="position: relative;">
+    <h1>CyberShield</h1>
+    <p>Protect Your Data, Protect Your Life.</p>
+    <nav>
+      <a href="index.html" class="nav-link fadeup-link active" data-href="index.html">Home</a>
+      <a href="about.html" class="nav-link fadeup-link" data-href="about.html">About</a>
+      <a href="protect.html" class="nav-link fadeup-link" data-href="protect.html">Protect Yourself</a>
+      <a href="tools.html" class="nav-link fadeup-link" data-href="tools.html">Tools & Guides</a>
+      <a href="contact.html" class="nav-link fadeup-link" data-href="contact.html">Contact</a>
+    </nav>
+    <a href="login.html" id="logout-btn" class="logout-btn-top">Logout</a>
+  </header>
+  
+  <main>
+    <!-- Main Content Here -->
+    <section class="hero">
+      <h1>Empowering You with Digital Protection</h1>
+      <p>CyberShield helps you stay safe online with essential tools and insights.</p>
+      <a href="protect.html" class="button">Protect Yourself Now</a>
+    </section>
+    <section class="features" style="display: flex; gap: 32px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px;">
+      <div class="highlight-tip" style="flex:1 1 260px; min-width:260px; max-width:340px; margin:0;">
+        <div class="tip-header"><span class="tip-star">★</span> <span class="tip-title">Privacy Protection</span></div>
+        <div class="tip-body">
+          Learn how to keep your personal data secure on all your devices.
+        </div>
+      </div>
+      <div class="highlight-tip" style="flex:1 1 260px; min-width:260px; max-width:340px; margin:0;">
+        <div class="tip-header"><span class="tip-star">★</span> <span class="tip-title">Cyber Awareness</span></div>
+        <div class="tip-body">
+          Understand common online threats like phishing, scams, and malware.
+        </div>
+      </div>
+      <div class="highlight-tip" style="flex:1 1 260px; min-width:260px; max-width:340px; margin:0;">
+        <div class="tip-header"><span class="tip-star">★</span> <span class="tip-title">Real-Time Updates</span></div>
+        <div class="tip-body">
+          Stay informed with the latest cybersecurity news and safety trends.
+        </div>
+      </div>
+    </section>
+    <!-- Functional Content: Password Strength Checker -->
+    <section class="highlight-tip" style="margin-top:40px;">
+      <div class="tip-header"><span class="tip-star">★</span> <span class="tip-title">Try It Now:</span> Password Strength Checker</div>
+      <div class="tip-body">
+        <label for="password-checker">Enter a password to check its strength:</label>
+        <input type="password" id="password-checker" style="width: 60%; padding: 8px; border-radius: 6px; border: 1.5px solid #21cbf3; margin: 10px 0;">
+        <div id="password-strength-result" style="margin-top: 8px; font-weight: bold;"></div>
+      </div>
+    </section>
+    <!-- Functional Content: Cybersecurity Tip of the Day -->
+    <section class="highlight-tip">
+      <div class="tip-header"><span class="tip-star">★</span> <span class="tip-title">Cybersecurity Tip of the Day</span></div>
+      <div class="tip-body" id="cyber-tip"></div>
+    </section>
+    <blockquote>
+      "CyberShield gave me the confidence to browse safely and securely every day." — Sarah L., University Student
+    </blockquote>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-about">
+        <h3>About CyberShield</h3>
+        <p>Your digital security partner, helping students and professionals stay safe online through awareness and smart tools.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="protect.html">Protect Yourself</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: support@cybershield.com</p>
+        <p>Phone: +60 12-345 6789</p>
+      </div>
+      <div class="footer-newsletter-inline">
+        <h3>Newsletter</h3>
+        <form class="newsletter-form-inline" id="newsletter-form">
+          <input type="email" placeholder="Enter your email" required id="newsletter-email">
+          <button type="submit">Subscribe</button>
+          <div id="newsletter-message" style="margin-top:8px;font-size:1em;"></div>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 CyberShield. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script>
+
+
+    // Password Strength Checker
+    const passwordInput = document.getElementById('password-checker');
+    const strengthResult = document.getElementById('password-strength-result');
+    if (passwordInput) {
+      passwordInput.addEventListener('input', function() {
+        const val = passwordInput.value;
+        let score = 0;
+        if (val.length >= 8) score++;
+        if (/[A-Z]/.test(val)) score++;
+        if (/[a-z]/.test(val)) score++;
+        if (/[0-9]/.test(val)) score++;
+        if (/[^A-Za-z0-9]/.test(val)) score++;
+        let msg = '';
+        switch(score) {
+          case 0:
+          case 1:
+            msg = 'Very Weak'; strengthResult.style.color = '#ff1744'; break;
+          case 2:
+            msg = 'Weak'; strengthResult.style.color = '#ff9100'; break;
+          case 3:
+            msg = 'Moderate'; strengthResult.style.color = '#ffd600'; break;
+          case 4:
+            msg = 'Strong'; strengthResult.style.color = '#00e676'; break;
+          case 5:
+            msg = 'Very Strong'; strengthResult.style.color = '#00bfae'; break;
+        }
+        strengthResult.textContent = val ? `Strength: ${msg}` : '';
+      });
+    }
+    // Cybersecurity Tip of the Day
+    const tips = [
+      'Use unique passwords for every account.',
+      'Enable two-factor authentication whenever possible.',
+      'Never share your passwords with anyone.',
+      'Be cautious of phishing emails and suspicious links.',
+      'Keep your software and devices updated.',
+      'Use a password manager to store your credentials securely.',
+      'Regularly back up your important data.',
+      'Lock your devices when not in use.',
+      'Avoid using public Wi-Fi for sensitive transactions.',
+      'Review app permissions before installing.'
+    ];
+    const tipDiv = document.getElementById('cyber-tip');
+    if (tipDiv) {
+      let tipIndex = 0;
+      function showNextTip() {
+        tipDiv.textContent = tips[tipIndex];
+        tipIndex = (tipIndex + 1) % tips.length;
+      }
+      showNextTip();
+      setInterval(showNextTip, 5000);
+    }
+    // Newsletter subscription functionality
+    const newsletterForm = document.getElementById('newsletter-form');
+    const newsletterEmail = document.getElementById('newsletter-email');
+    const newsletterMsg = document.getElementById('newsletter-message');
+    if (newsletterForm) {
+      newsletterForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        if (newsletterEmail.value && newsletterEmail.validity.valid) {
+          newsletterMsg.style.color = '#21cbf3';
+          newsletterMsg.textContent = 'Thank you for subscribing!';
+          newsletterEmail.value = '';
+        } else {
+          newsletterMsg.style.color = '#ff1744';
+          newsletterMsg.textContent = 'Please enter a valid email address.';
+        }
+      });
+    }
+    // Logout button functionality: redirect to login page
+    const logoutBtn = document.getElementById('logout-btn');
+    if (logoutBtn) {
+      logoutBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = 'login.html';
+      });
+    }
+  </script>
+</body>
+</html>
